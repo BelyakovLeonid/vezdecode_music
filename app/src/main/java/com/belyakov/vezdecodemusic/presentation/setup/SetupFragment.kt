@@ -37,10 +37,9 @@ class SetupFragment : Fragment(R.layout.f_setup) {
     }
 
     private fun observeViewModel() {
-        nextButton.isEnabled = true
-//        observe(viewModel.setupDone) {
-//            nextButton.isEnabled = it
-//        }
+        observe(viewModel.setupDone) {
+            nextButton.isEnabled = it
+        }
         observe(viewModel.audioInfo) {
             loadAudio.loadAudioInfo(it)
         }
