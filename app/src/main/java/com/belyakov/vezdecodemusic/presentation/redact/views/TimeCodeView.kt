@@ -37,33 +37,34 @@ class TimeCodeView @JvmOverloads constructor(
     }
 
     private fun openTimeDialog() {
-        fragmentManager?.let {
-            TimecodePickerDialog.getInstance().show(it, TimecodePickerDialog.TAG)
-        }
-//
-//        Calendar.getInstance().let {
-//            val dateListener = TimePickerDialog.OnTimeSetListener { _, h, m ->
-//                it.set(Calendar.HOUR_OF_DAY, h)
-//                it.set(Calendar.MINUTE, m)
-//                selectedTime =
-//                    TimeUnit.MINUTES.toMillis(m.toLong()) + TimeUnit.SECONDS.toMillis(h.toLong()) //todo плохо
-//                timeButton.text = it.toTimeString()
-//            }
-//
-//            TimePickerDialog(
-//                context,
-//                dateListener,
-//                it.get(Calendar.HOUR_OF_DAY),
-//                it.get(Calendar.MINUTE),
-//                true
-//            ).apply {
-//                window?.setFlags(
-//                    WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
-//                    WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
-//                )
-//                show()
-//            }
+//        todo not worked well yet
+//        fragmentManager?.let {
+//            TimecodePickerDialog.getInstance().show(it, TimecodePickerDialog.TAG)
 //        }
+
+        Calendar.getInstance().let {
+            val dateListener = TimePickerDialog.OnTimeSetListener { _, h, m ->
+                it.set(Calendar.HOUR_OF_DAY, h)
+                it.set(Calendar.MINUTE, m)
+                selectedTime =
+                    TimeUnit.MINUTES.toMillis(m.toLong()) + TimeUnit.SECONDS.toMillis(h.toLong()) //todo плохо
+                timeButton.text = it.toTimeString()
+            }
+
+            TimePickerDialog(
+                context,
+                dateListener,
+                it.get(Calendar.HOUR_OF_DAY),
+                it.get(Calendar.MINUTE),
+                true
+            ).apply {
+                window?.setFlags(
+                    WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
+                    WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
+                )
+                show()
+            }
+        }
     }
 
     fun setTimecodeName(name: String) {
