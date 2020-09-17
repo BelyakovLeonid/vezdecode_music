@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.belyakov.vezdecodemusic.presentation.start.StartFragment"
+        android:label="StartFragment">
+        <action
+            android:id="@+id/action_to_setupFragment"
+            app:destination="@id/setupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.belyakov.vezdecodemusic.presentation.setup.SetupFragment"
+        android:label="SetupFragment">
+        <action
+            android:id="@+id/action_to_redactFragment"
+            app:destination="@id/redactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/redactFragment"
+        android:name="com.belyakov.vezdecodemusic.presentation.redact.RedactFragment"
+        android:label="RedactFragment">
+        <action
+            android:id="@+id/action_to_endSetupFragment"
+            app:destination="@id/endSetupFragment" />
+        <action
+            android:id="@+id/action_redactFragment_to_chooseMusicFragment"
+            app:destination="@id/chooseMusicFragment" />
+        <!--        <action-->
+<!--            android:id="@+id/action_to_chooseMusicFragment"-->
+<!--            app:destination="@id/chooseMusicFragment" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/endSetupFragment"
+        android:name="com.belyakov.vezdecodemusic.presentation.endsetup.EndSetupFragment"
+        android:label="EndSetupFragment">
+        <action
+            android:id="@+id/action_to_finishFragment"
+            app:popUpTo="@id/startFragment"
+            app:destination="@id/finishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.belyakov.vezdecodemusic.presentation.finish.FinishFragment"
+        android:label="FinishFragment"/>
+    <fragment
+        android:id="@+id/chooseMusicFragment"
+        android:name="com.belyakov.vezdecodemusic.presentation.music.ChooseMusicFragment"
+        android:label="ChooseMusicFragment" />
+</navigation>

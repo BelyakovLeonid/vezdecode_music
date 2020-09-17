@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">VezdecodeMusic</string>
+    <string name="add_first_podcast">Добавьте первый подкаст</string>
+    <string name="add_podcast">Добавить подкаст</string>
+    <string name="add_podcast_hint">Добавляйте, редактируйте и делитесь подкастами вашего сообщества.</string>
+
+    <string name="added_podcast">Подкаст добавлен</string>
+    <string name="added_podcast_share">Поделиться подкастом</string>
+    <string name="added_podcast_hint">Раскажите своим подписчикам о новом подкасте, чтобы получить больше слушателей.</string>
+
+    <string name="podcast_new">Новый подкаст</string>
+    <string name="podcast_name">Название</string>
+    <string name="podcast_name_hint">Введите название подкаста</string>
+    <string name="podcast_description">Описание подкаста</string>
+    <string name="podcast_description_hint">Введите описание подкаста</string>
+    <string name="podcast_audio_hint">Вы можете добавить таймкоды и скорректировать подкаст в режиме редактирования</string>
+    <string name="audio_load">Загрузите ваш подкаст</string>
+    <string name="audio_load_hint">Выберите готовый аудиофайл из вашего телефона и добавьте его</string>
+    <string name="audio_start_load">Загрузить файл</string>
+    <string name="audio_redact">Редактировать аудиозапись</string>
+    <string name="podcast_tag_content">Ненормативный контент</string>
+    <string name="podcast_tag_export">Исключить эпизод из экспорта</string>
+    <string name="podcast_tag_trailer">Трейлер подкаста</string>
+
+    <string name="podcast_visibility">Кому доступен данный подкаст</string>
+    <string name="visibility_all">Всем пользователям</string>
+    <string name="visibility_all_hint">При публикации записи с эпизодом, он становится доступным для всех пользователей</string>
+    <string name="visibility_friends">Всем пользователям</string>
+    <string name="visibility_friends_hint">При публикации записи с эпизодом, он становится доступным для всех друзей</string>
+    <string name="visibility_members">Всем пользователям</string>
+    <string name="visibility_members_hint">При публикации записи с эпизодом, он становится доступным для всех участников сообщества</string>
+
+    <string name="podcast_redact">Редактирование</string>
+    <string name="podcast_timecodes">Таймкоды</string>
+    <string name="podcast_timecodes_hint">Отметки времени с названием темы. Позволяют слушателям легче путешествовать по подкасту.</string>
+    <string name="podcast_add_timecode">Добавить таймкод</string>
+    <string name="music_appearing">Появление: вкл.</string>
+    <string name="music_disappearing">Исчезание: вкл.</string>
+
+    <string name="music_choose">Выбрать музыку</string>
+    <string name="music_change">Изменить музыку</string>
+    <string name="music_delete">Удалить музыку</string>
+
+    <string name="description">Описание:</string>
+    <string name="podcast_content">Таймкоды:</string>
+    <string name="podcast_publish">Опубликовать подкаст</string>
+
+    <string name="search">Поиск</string>
+    <string name="cancel">Отменить</string>
+    <string name="next">Далее</string>
+    <string name="start_time">00:00</string>
+    <string name="timecode_name">Таймкод %1$d</string>
+    <string name="community">Сообщество “ПараDogs”</string>
+    <string name="pick_image">Выберите обложку</string>
+    <string name="name_template"> — %1$s</string>
+    <string name="unknown_file">Неизвестный файл</string>
+</resources>

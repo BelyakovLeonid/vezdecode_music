@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp">
+
+    <ImageView
+        android:id="@+id/musicIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_music_1" />
+
+    <TextView
+        android:id="@+id/audioName"
+        style="@style/NormalTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toTopOf="@id/audioAuthor"
+        app:layout_constraintEnd_toStartOf="@id/audioDuration"
+        app:layout_constraintStart_toEndOf="@id/musicIcon"
+        app:layout_constraintTop_toTopOf="@id/musicIcon"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="All of the Lights" />
+
+    <TextView
+        android:id="@+id/audioAuthor"
+        style="@style/SmallTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/musicIcon"
+        app:layout_constraintEnd_toStartOf="@id/audioDuration"
+        app:layout_constraintStart_toEndOf="@id/musicIcon"
+        app:layout_constraintTop_toBottomOf="@id/audioName"
+        tools:text="Kanye West" />
+
+    <TextView
+        android:id="@+id/audioDuration"
+        style="@style/SmallTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dots"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="43:22" />
+
+    <ImageView
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_dots"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
